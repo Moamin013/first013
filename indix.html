@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Eerste Website</title> <!-- Dit is de titel van je website -->
+    <style>
+        /* CSS - Opmaak van de website */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welkom op mijn eerste website!</h1>
+    <p>Dit is mijn eerste website die ik heb gemaakt met HTML, CSS en JavaScript op GitHub Pages.</p>
+
+    <!-- Knop die actie uitvoert -->
+    <button onclick="changeText()">Klik hier voor een boodschap!</button>
+    <p id="message"></p>
+
+    <script>
+        // JavaScript - Functie die de tekst verandert wanneer op de knop wordt geklikt
+        function changeText() {
+            document.getElementById("message").innerHTML = "Je hebt op de knop geklikt! Goed gedaan!";
+        }
+    </script>
+
+</body>
+</html>
